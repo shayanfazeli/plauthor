@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>plotters package &#8212; Plauthor 0.1.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinxbootstrap4.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinxbootstrap4.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="utilities module" href="utilities.html" />
+    <link rel="prev" title="plotters.deep package" href="plotters.deep.html" /> 
+  </head><body>
+  <nav class="navbar navbar-expand-md  fixed-top navbar-dark bg-inverse flex-wrap">
+    <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+      <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+           <a class="navbar-brand py-1" href="../index.html">
+                  Plauthor
+          </a>
+          <ul class="navbar-nav mr-auto">
+          
+              <li class="nav-item dropdown d-none d-sm-block" id="navbar-pages">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                  <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">plotters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.distribution">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.general">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.matrix">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">utilities module</a></li>
+</ul>
+
+                  </ul>
+              </li>
+              <li class="nav-item">
+              <a  class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item">
+              
+                  <a  class="nav-link" href="http://example.com">Link</a></li>
+          </ul>
+          <div class="dropdown-divider d-block d-sm-none mb-4"></div>
+             
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <!--<div class="row hidden-sm-up">
+          <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+              <div class="container">
+             　　 <a class="navbar-brand" href="../index.html">
+                      Plauthor
+                  </a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li>
+                  <a  class="nav-link" href="../index.html">Home</a></li>
+                  <li>
+                  
+                      <a  class="nav-link" href="http://example.com">Link</a></li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <div class="navbar-text">search<div>
+              
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          </div>
+      </div>-->
+    </nav>
+  </div>
+
+    <div class="related d-flex justify-content-between bg-light flex-wrap" role="navigation" aria-label="related navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Plauthor 0.1.0 documentation</a></li>
+            <li class="breadcrumb-item active">plotters package</li>
+        </ol>
+       <div>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+               <a href="plotters.deep.html" title="Previous Chapter: plotters.deep package" class="btn btn-primary" role="botton" accesskey="P">
+                   &laquo; plotters.deep package
+               </a>
+               <a href="utilities.html" title="Next Chapter: utilities module" class="btn btn-primary" role="botton" accesskey="N">
+                   utilities module &raquo;
+               </a>
+           </div>
+       </div>
+    </div>
+
+  <div class="main container-fluid">
+    <div class="row"> 
+      <div class="sphinxsidebar d-none d-md-block">
+        <div class="sphinxsidebarwrapper">          
+            <h4>Table Of Contents</h4>
+            
+            
+              <div class="sidebartoctree">
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">plotters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.distribution">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.general">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.matrix">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">utilities module</a></li>
+</ul>
+
+              </div>
+            
+          
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="plotters.deep.html"
+                        title="previous chapter">plotters.deep package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utilities.html"
+                        title="next chapter">utilities module</a></p>
+<div id="searchbox" style="display: none">
+    <form class="form search" action="../search.html" method="get">
+      <input type="text" name="q" class="form-control" placeholder="Search..." />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <ul class="this-page-menu list-unstyled text-right">
+    <li><a href="../_sources/api/plotters.rst.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+        </div>
+      </div> 
+
+      <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="plotters-package">
+<h1>plotters package<a class="headerlink" href="#plotters-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-plotters.distribution">
+<span id="plotters-distribution-module"></span><h2>plotters.distribution module<a class="headerlink" href="#module-plotters.distribution" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="plotters.distribution.plot_2d_distribution_per_category">
+<code class="sig-prename descclassname">plotters.distribution.</code><code class="sig-name descname">plot_2d_distribution_per_category</code><span class="sig-paren">(</span><em class="sig-param">dataframe: pandas.core.frame.DataFrame, label_column: str, coordinates: Tuple[str], colors: List[str], coloring_style: str = 'manual', log_10_scale: bool = False, theme: str = 'gray', alpha: float = 0.5, save_to_file: str = None, dpi: int = 150</em><span class="sig-paren">)</span> &#x2192; plotnine.ggplot.ggplot<a class="headerlink" href="#plotters.distribution.plot_2d_distribution_per_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.distribution.plot_2d_distribution_per_category" title="plotters.distribution.plot_2d_distribution_per_category"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot_2d_distribution_per_category()</span></code></a> helps with providing the user with a 2-dimensional plot of the
+whole distribution.</p>
+<dl class="simple">
+<dt>dataframe: <cite>pandas.DataFrame</cite>, required</dt><dd><p>This is the main parameter that this method is supposed to work with, which is a dataframe with a label column
+(which is to help us determine the column) and coordinates for x and y axes.</p>
+</dd>
+<dt>label_column: <cite>str</cite>, required</dt><dd><p>The input dataframe must have a label_column (preferably integer starting from 0), the name of that
+column should be input here.</p>
+</dd>
+<dt>coordinates: <cite>Tuple[str]</cite>, required</dt><dd><p>This is a tuple of column names, the first one being the column in which the <cite>x</cite> values for our 2d plot
+are stored, and the other one corresponds to the <cite>y</cite> axis.</p>
+</dd>
+<dt>colors: <cite>List[str]</cite>, required</dt><dd><p>Depending on whether or not our <cite>coloring_style</cite> is manual or automatic, this can either be a list of colors
+or a list of two colors indicating a range of color values.</p>
+</dd>
+<dt>coloring_style: <cite>str</cite>, optional (default=’manual’)</dt><dd><p>Either <cite>manual</cite> or <cite>gradient</cite> which helps assigning colors to clusters.</p>
+</dd>
+<dt>log_10_scale: <cite>bool</cite>, optional (default=False)</dt><dd><p>If the user wants to take the logarithm in the basis of 10, this parameter should be set to 1.</p>
+</dd>
+<dt>theme: <cite>str</cite>, optional (default=’gray’)</dt><dd><p>This is the <cite>theme</cite> types, the acceped values are: <code class="docutils literal notranslate"><span class="pre">['gray',</span> <span class="pre">'dark',</span> <span class="pre">'seaborn',</span> <span class="pre">'light']</span></code>, the values
+are consistent with <cite>plotnine</cite> package’s format.</p>
+</dd>
+<dt>alpha: <cite>float</cite>, optional (default=0.5)</dt><dd><p>The transparency intensity can be determined by setting this parameter.</p>
+</dd>
+<dt>save_to_file: <cite>str</cite>, optional (default=None)</dt><dd><p>If the user intends to save the plot in a file, this parameter should have a value. The value must be a filepath.</p>
+</dd>
+<dt>dpi: <cite>int</cite>, optional (default=150)</dt><dd><p>The dpi for saving the plots indicating the image quality.</p>
+</dd>
+</dl>
+<p>The output of this method is of <cite>p9.ggplot</cite> type.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="plotters.distribution.plot_binned_distribution_per_category">
+<code class="sig-prename descclassname">plotters.distribution.</code><code class="sig-name descname">plot_binned_distribution_per_category</code><span class="sig-paren">(</span><em class="sig-param">distribution_bundle: Dict[str, numpy.ndarray], number_of_bins: int = 1000, colors: List[str] = ['b', 'g', 'r', 'c', 'y', 'k'], alpha: float = 0.5, save_to_file: str = None, dpi: int = 150, show: bool = True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#plotters.distribution.plot_binned_distribution_per_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.distribution.plot_binned_distribution_per_category" title="plotters.distribution.plot_binned_distribution_per_category"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot_binned_distribution_per_category()</span></code></a> is responsible to take in a dictionary of categories, each of
+which including a single-dimensional array of values. These values are the instantiations of that random
+variable, and are used in plotting the binned distributions. The output is either shoing a plot or saving it in a
+figure specified in the <cite>save_to_file</cite> parameter.</p>
+<p>This function can be used to observe multiple distributions at the same time.</p>
+<p>Also, note that the value-range of horizontal axis and the zoom are determined by the data values automatically
+in a way that allows the user to have a clear picture of the entire plot.</p>
+<dl class="simple">
+<dt>distribution_bundle: <cite>Dict[str, numpy.ndarray]</cite>, required</dt><dd><p>The main input, which is dictionary of distributions for example:
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">distribution_bundle</span> <span class="pre">=</span> <span class="pre">{'hr=0':</span> <span class="pre">np.array(...),</span> <span class="pre">'hr=2':</span> <span class="pre">np.array(...)}</span>
+<span class="pre">`</span></code>
+Note that in the example above all the shape tuples are of length one.</p>
+</dd>
+<dt>number_of_bins: <cite>int</cite>, optional (default=1000)</dt><dd><p>Number of bins in each of the histograms determine the resolution and can be fine-tuned by the user in here.</p>
+</dd>
+<dt>colors: <cite>List[str]</cite>, optional(default=[‘b’, ‘g’, ‘r’, ‘c’, ‘y’, ‘k’])</dt><dd><p>The mapping from histogram index to the colors that we are going to represent them with. The format is the
+format of <cite>matplotlib</cite> colors and should be inserted as a list.</p>
+</dd>
+<dt>alpha: <cite>float</cite>, optional (default=0.5)</dt><dd><p>Alpha is the transparency factor which can be used in our case.</p>
+</dd>
+<dt>save_to_file: <cite>str</cite>, optional (default=None)</dt><dd><p>If the user intends to save the plot in a file, this parameter should have a value. The value must be a filepath.</p>
+</dd>
+<dt>dpi: <cite>int</cite>, optional (default=150)</dt><dd><p>The dpi for saving the plots indicating the image quality.</p>
+</dd>
+<dt>show: <cite>bool</cite>, optional (default=True)</dt><dd><p>This value is set to true if the user wants to observe the plot as well.</p>
+</dd>
+</dl>
+<p>This method is saving a file to the storage system, and plots a graph if requested, but it does not return anything.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="plotters.distribution.plot_violinbox_plots_per_category">
+<code class="sig-prename descclassname">plotters.distribution.</code><code class="sig-name descname">plot_violinbox_plots_per_category</code><span class="sig-paren">(</span><em class="sig-param">dataframe: pandas.core.frame.DataFrame, plot_type: str, target_feature: str, label_column: str, colors: List[str], coloring_style: str, value_skip_list: List = [], jitter_alpha: float = 0.7, plot_alpha: float = 0.5, log_10_scale: bool = False, theme: str = 'gray', save_to_file: str = None, dpi: int = 150, show: bool = True</em><span class="sig-paren">)</span> &#x2192; plotnine.ggplot.ggplot<a class="headerlink" href="#plotters.distribution.plot_violinbox_plots_per_category" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.distribution.plot_violinbox_plots_per_category" title="plotters.distribution.plot_violinbox_plots_per_category"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot_violinbox_plots_per_category()</span></code></a> helps with providing the user with nicely plotted violin and
+box plots of the distribution of data points.</p>
+<dl class="simple">
+<dt>dataframe: <cite>pandas.DataFrame</cite>, required</dt><dd><p>This is the main parameter that this method is supposed to work with, which is a dataframe that has
+a label column in which we have integer values starting from 0, and a float feature column the distribution
+of which we tend to monitor.</p>
+</dd>
+<dt>plot_type: <cite>str</cite>, required</dt><dd><p>This value, either <cite>box</cite> or <cite>violin</cite>, determines the type of plot.</p>
+</dd>
+<dt>target_feature: <cite>str</cite>, required</dt><dd><p>This parameter is the column name of the features that we want to monitor.</p>
+</dd>
+<dt>label_column: <cite>str</cite>, required</dt><dd><p>The input dataframe must have a label_column (preferably integer starting from 0), the name of that
+column should be input here.</p>
+</dd>
+<dt>colors: <cite>List[str]</cite>, required</dt><dd><p>Depending on whether or not our <cite>coloring_style</cite> is manual or automatic, this can either be a list of colors
+or a list of two colors indicating a range of color values.</p>
+</dd>
+<dt>coloring_style: <cite>str</cite>, optional (default=’manual’)</dt><dd><p>Either <cite>manual</cite> or <cite>gradient</cite> which helps assigning colors to clusters.</p>
+</dd>
+<dt>value_skip_list: <cite>List</cite>, optional (default=[])</dt><dd><p>If some values in the feature column are to be skipped, they should be put in here so that they
+are ignored in the plots. For example, if for some reason some values are -10000000, they can be taken care
+of in here.</p>
+</dd>
+<dt>jitter_alpha: <cite>float</cite>, optional (default=0.7)</dt><dd><p>The jitter value transparency is set in this parameter.</p>
+</dd>
+<dt>plot_alpha: <cite>float</cite>, optional (default=0.5)</dt><dd><p>The transparency intensity can be determined by setting this parameter.</p>
+</dd>
+<dt>log_10_scale: <cite>bool</cite>, optional (default=False)</dt><dd><p>If the user wants to take the logarithm in the basis of 10, this parameter should be set to 1.</p>
+</dd>
+<dt>theme: <cite>str</cite>, optional (default=’gray’)</dt><dd><p>This is the <cite>theme</cite> types, the acceped values are: <code class="docutils literal notranslate"><span class="pre">['gray',</span> <span class="pre">'dark',</span> <span class="pre">'seaborn',</span> <span class="pre">'light']</span></code>, the values
+are consistent with <cite>plotnine</cite> package’s format.</p>
+</dd>
+<dt>save_to_file: <cite>str</cite>, optional (default=None)</dt><dd><p>If the user intends to save the plot in a file, this parameter should have a value. The value must be a filepath.</p>
+</dd>
+<dt>dpi: <cite>int</cite>, optional (default=150)</dt><dd><p>The dpi for saving the plots indicating the image quality.</p>
+</dd>
+<dt>show: <cite>bool</cite>, optional (default=True)</dt><dd><p>Whether or not the plot is to be shown is set in this parameter.</p>
+</dd>
+</dl>
+<p>The output of this method is of <cite>p9.ggplot</cite> type.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plotters.general">
+<span id="plotters-general-module"></span><h2>plotters.general module<a class="headerlink" href="#module-plotters.general" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="plotters.general.scatter">
+<code class="sig-prename descclassname">plotters.general.</code><code class="sig-name descname">scatter</code><span class="sig-paren">(</span><em class="sig-param">x: numpy.ndarray</em>, <em class="sig-param">y: numpy.ndarray</em>, <em class="sig-param">figsize: int = 20</em><span class="sig-paren">)</span> &#x2192; Tuple[Any, Tuple[Any, Any], Any, List, int]<a class="headerlink" href="#plotters.general.scatter" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.general.scatter" title="plotters.general.scatter"><code class="xref py py-func docutils literal notranslate"><span class="pre">scatter()</span></code></a> helps with normal scatter plots.
+Parameters
+———–
+x: <cite>numpy.ndarray</cite>, required</p>
+<blockquote>
+<div><p>The values of x, a 2 dimensional array in which two columns exist.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>y: <cite>numpy.ndarray</cite>, required</dt><dd><p>The values of y, or labels.</p>
+</dd>
+<dt>figsize: <cite>int</cite>, optional (default=20)</dt><dd><p>The figure size.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>(f, ax, sc, txt, number_of_classes): <cite>Tuple</cite></dt><dd><p>The output is the figure, axes, texts, and number of classes</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plotters.matrix">
+<span id="plotters-matrix-module"></span><h2>plotters.matrix module<a class="headerlink" href="#module-plotters.matrix" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="plotters.matrix.visualize_matrix">
+<code class="sig-prename descclassname">plotters.matrix.</code><code class="sig-name descname">visualize_matrix</code><span class="sig-paren">(</span><em class="sig-param">matrix: numpy.ndarray, column_names: List[str], row_names: List[str] = None, figure_size: float = 35.0, color_tone: str = 'red', save_to_file: str = None, round_to_this_decimal_places: int = 2, show: bool = True</em><span class="sig-paren">)</span><a class="headerlink" href="#plotters.matrix.visualize_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.matrix.visualize_matrix" title="plotters.matrix.visualize_matrix"><code class="xref py py-meth docutils literal notranslate"><span class="pre">visualize_matrix()</span></code></a> helps with visualizing matrices in a grid.</p>
+<dl class="simple">
+<dt>matrix: <cite>numpy.ndarray</cite>, required</dt><dd><p>The matrix to be visualized (must be 2 dimensional)</p>
+</dd>
+<dt>column_names: <cite>List[str]</cite>, required</dt><dd><p>The legends for the plot are found in this parameter’s values, for each element.</p>
+</dd>
+<dt>row_names: <cite>List[str]</cite>, required</dt><dd><p>The legends for the plot are found in this parameter’s values, for each element.</p>
+</dd>
+<dt>figure_size: <cite>float</cite>, optional (default=35.0)</dt><dd><p>The size of the output figure is determined in this parameter.</p>
+</dd>
+<dt>color_tone: <cite>str</cite>, optional (default=’red’)</dt><dd><p>The overall color tone for the plot is determined in this parameter.</p>
+</dd>
+<dt>save_to_file: <a href="#id1"><span class="problematic" id="id2">`</span></a>str, optional (default=None)</dt><dd><p>If a value is specified for this parameter, the figure will be saved in it.</p>
+</dd>
+<dt>round_to_this_decimal_places: <cite>int</cite>, optional (default=2)</dt><dd><p>This parameter denotes to how many decimal places should we show the values.</p>
+</dd>
+<dt>show: <cite>bool</cite>, optional (default=True)</dt><dd><p>Whether or not the user wants to see the plot as well is decided in this parameter.</p>
+</dd>
+</dl>
+<p>This method does not return anything.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plotters">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-plotters" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="clearer"></div>
+      </div>
+    </div>
+<footer class="footer d-flex justify-content-between flex-wrap">
+    <div class="copyright">
+        <div>&copy; Copyright 2019, Shayan Fazeli.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0 using <a href="https://github.com/myyasuda/sphinxbootstrap4theme">sphinxbootstrap4theme</a> 0.6.0.</div>
+    </div>
+    <div>
+        <a href="#" class="btn btn-primary btn-sm" role="botton">Back to top</a>
+    </div>
+</footer>
+  </body>
+</html>

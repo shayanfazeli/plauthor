@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>plotters.deep package &#8212; Plauthor 0.1.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinxbootstrap4.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinxbootstrap4.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="plotters package" href="plotters.html" />
+    <link rel="prev" title="Welcome to Plauthor’s documentation!" href="../index.html" /> 
+  </head><body>
+  <nav class="navbar navbar-expand-md  fixed-top navbar-dark bg-inverse flex-wrap">
+    <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+      <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+           <a class="navbar-brand py-1" href="../index.html">
+                  Plauthor
+          </a>
+          <ul class="navbar-nav mr-auto">
+          
+              <li class="nav-item dropdown d-none d-sm-block" id="navbar-pages">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                  <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="plotters.html">plotters package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="plotters.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.distribution">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.general">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.matrix">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">utilities module</a></li>
+</ul>
+
+                  </ul>
+              </li>
+              <li class="nav-item">
+              <a  class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item">
+              
+                  <a  class="nav-link" href="http://example.com">Link</a></li>
+          </ul>
+          <div class="dropdown-divider d-block d-sm-none mb-4"></div>
+             
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <!--<div class="row hidden-sm-up">
+          <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+              <div class="container">
+             　　 <a class="navbar-brand" href="../index.html">
+                      Plauthor
+                  </a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li>
+                  <a  class="nav-link" href="../index.html">Home</a></li>
+                  <li>
+                  
+                      <a  class="nav-link" href="http://example.com">Link</a></li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <div class="navbar-text">search<div>
+              
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          </div>
+      </div>-->
+    </nav>
+  </div>
+
+    <div class="related d-flex justify-content-between bg-light flex-wrap" role="navigation" aria-label="related navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Plauthor 0.1.0 documentation</a></li>
+            <li class="breadcrumb-item active">plotters.deep package</li>
+        </ol>
+       <div>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+               <a href="../index.html" title="Previous Chapter: Welcome to Plauthor’s documentation!" class="btn btn-primary" role="botton" accesskey="P">
+                   &laquo; Welcome to Pl...
+               </a>
+               <a href="plotters.html" title="Next Chapter: plotters package" class="btn btn-primary" role="botton" accesskey="N">
+                   plotters package &raquo;
+               </a>
+           </div>
+       </div>
+    </div>
+
+  <div class="main container-fluid">
+    <div class="row"> 
+      <div class="sphinxsidebar d-none d-md-block">
+        <div class="sphinxsidebarwrapper">          
+            <h4>Table Of Contents</h4>
+            
+            
+              <div class="sidebartoctree">
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="plotters.html">plotters package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="plotters.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep.pca">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep.tsne">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-plotters.deep">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.distribution">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.general">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters.matrix">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-plotters">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">utilities module</a></li>
+</ul>
+
+              </div>
+            
+          
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Welcome to Plauthor’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="plotters.html"
+                        title="next chapter">plotters package</a></p>
+<div id="searchbox" style="display: none">
+    <form class="form search" action="../search.html" method="get">
+      <input type="text" name="q" class="form-control" placeholder="Search..." />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <ul class="this-page-menu list-unstyled text-right">
+    <li><a href="../_sources/api/plotters.deep.rst.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+        </div>
+      </div> 
+
+      <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="plotters-deep-package">
+<h1>plotters.deep package<a class="headerlink" href="#plotters-deep-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-plotters.deep.pca">
+<span id="plotters-deep-pca-module"></span><h2>plotters.deep.pca module<a class="headerlink" href="#module-plotters.deep.pca" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="plotters.deep.pca.apply_pca">
+<code class="sig-prename descclassname">plotters.deep.pca.</code><code class="sig-name descname">apply_pca</code><span class="sig-paren">(</span><em class="sig-param">X: numpy.ndarray</em>, <em class="sig-param">pca: sklearn.decomposition.pca.PCA</em><span class="sig-paren">)</span><a class="headerlink" href="#plotters.deep.pca.apply_pca" title="Permalink to this definition">¶</a></dt>
+<dd><p>To apply PCA, this method can be used.
+Parameters
+———-
+X: <cite>numpy.ndarray</cite>, required</p>
+<blockquote>
+<div><p>This is the matrix, however, note that it is user’s (caller’s) responsibility to assure
+that if there was any normalization involved in the computation of the PCA, the same
+normalization should have already been applied to this parameter before applying this function.
+Otherwise, the output will be unreliable.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>pca: <cite>sklearn.decomposition.PCA</cite>, required</dt><dd><p>The PCA to be applied</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>output: <cite>numpy.ndarray</cite></dt><dd><p>The output matrix after applying the pCA</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="plotters.deep.pca.get_pca_transform">
+<code class="sig-prename descclassname">plotters.deep.pca.</code><code class="sig-name descname">get_pca_transform</code><span class="sig-paren">(</span><em class="sig-param">X: numpy.ndarray</em>, <em class="sig-param">number_of_components: int = 2</em>, <em class="sig-param">normalization: str = None</em><span class="sig-paren">)</span> &#x2192; sklearn.decomposition.pca.PCA<a class="headerlink" href="#plotters.deep.pca.get_pca_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.deep.pca.get_pca_transform" title="plotters.deep.pca.get_pca_transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_pca_transform()</span></code></a> returns the PCA transform on this data, using the Sci-Kit learn PCA
+functionalities.
+Parameters
+————
+X: <cite>numpy.ndarray</cite>, required</p>
+<blockquote>
+<div><p>The data which is a two-dimensional matrix, in which each row is a feature-vector.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>number_of_components: <cite>int</cite>, optional (default=2)</dt><dd><p>The number of components in the PCA.</p>
+</dd>
+<dt>normalization: <cite>str</cite>, optional (default=None)</dt><dd><p>The normalization type, which is either None which means no normalization, or <cite>minmax</cite> or <cite>zscore</cite>.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>pca: <cite>sklearn.decomposition.PCA</cite></dt><dd><p>The PCA for this data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-plotters.deep.tsne">
+<span id="plotters-deep-tsne-module"></span><h2>plotters.deep.tsne module<a class="headerlink" href="#module-plotters.deep.tsne" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="plotters.deep.tsne.TSNEAgent">
+<em class="property">class </em><code class="sig-prename descclassname">plotters.deep.tsne.</code><code class="sig-name descname">TSNEAgent</code><span class="sig-paren">(</span><em class="sig-param">configurations=None</em><span class="sig-paren">)</span><a class="headerlink" href="#plotters.deep.tsne.TSNEAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The <a class="reference internal" href="#plotters.deep.tsne.TSNEAgent" title="plotters.deep.tsne.TSNEAgent"><code class="xref py py-class docutils literal notranslate"><span class="pre">TSNEAgent</span></code></a> helps with providing the user with the t-sne related functionalities, allowing mechanisms
+such as making tsne movies, etc. This work is highly inspired by the t-SNE tutorial by oreillymedia in <cite>https://github.com/oreillymedia/t-SNE-tutorial</cite>.</p>
+<dl class="method">
+<dt id="plotters.deep.tsne.TSNEAgent.find_tsne_projections">
+<code class="sig-name descname">find_tsne_projections</code><span class="sig-paren">(</span><em class="sig-param">X: numpy.ndarray</em>, <em class="sig-param">perplexity: float = None</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#plotters.deep.tsne.TSNEAgent.find_tsne_projections" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.deep.tsne.TSNEAgent.find_tsne_projections" title="plotters.deep.tsne.TSNEAgent.find_tsne_projections"><code class="xref py py-meth docutils literal notranslate"><span class="pre">find_tsne_projections()</span></code></a> helps with building the projections of tsne.
+Parameters
+———-
+X: <cite>numpy.ndarray</cite>, required</p>
+<blockquote>
+<div><p>The data as a numpy array of shape: (number_of_data, element_dimension)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>perplexity: <cite>float</cite>, optional (default=None)</dt><dd><p>If this value is provided, the perplexity determined by the configuration will be overrided. This
+parameter is here because it is probable for the user to try to have multiple perplexities tested,
+as it is a natural thing to do when it comes to t-SNE.</p>
+</dd>
+</dl>
+<p>The output of this function is a <cite>numpy.ndarray</cite> which has the shape equal to the number of points times
+the number of t-SNE components, as specified beforehand in the configurations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="plotters.deep.tsne.TSNEAgent.make_a_tsne_movie">
+<code class="sig-name descname">make_a_tsne_movie</code><span class="sig-paren">(</span><em class="sig-param">X: numpy.ndarray</em>, <em class="sig-param">y: numpy.ndarray</em>, <em class="sig-param">movie_path: str</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#plotters.deep.tsne.TSNEAgent.make_a_tsne_movie" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.deep.tsne.TSNEAgent.make_a_tsne_movie" title="plotters.deep.tsne.TSNEAgent.make_a_tsne_movie"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_a_tsne_movie()</span></code></a> helps with making a t-SNE movie. This is essentially useful
+when we have a slow-converging process, and having a movie can help shedding light on the path
+from bad locations to possibly good ones in the space.
+Parameters
+———-
+X: <cite>numpy.ndarray</cite>, required</p>
+<blockquote>
+<div><p>The data as a numpy array of shape: (number_of_data, element_dimension)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>y: <cite>numpy.ndarray</cite>, required</dt><dd><p>The one-dimensional array of labels.</p>
+</dd>
+<dt>movie_path: <cite>str</cite>, required</dt><dd><p>The filepath to the movie. Note that the folder should exist and the image should be in <cite>.gif</cite> format.</p>
+</dd>
+</dl>
+<p>The output of this function is a <cite>numpy.ndarray</cite> which has the shape equal to the number of points times
+the number of t-SNE components, as specified beforehand in the configurations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="plotters.deep.tsne.TSNEAgent.process_configurations">
+<code class="sig-name descname">process_configurations</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#plotters.deep.tsne.TSNEAgent.process_configurations" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function looks through the configuration file and
+finds the preferences and/or sets defaults</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="plotters.deep.tsne.TSNEAgent.set_random_state">
+<code class="sig-name descname">set_random_state</code><span class="sig-paren">(</span><em class="sig-param">seed: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#plotters.deep.tsne.TSNEAgent.set_random_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#plotters.deep.tsne.TSNEAgent.set_random_state" title="plotters.deep.tsne.TSNEAgent.set_random_state"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_random_state()</span></code></a> can be used to set the random state of the class.
+Parameters
+seed: <cite>int</cite>, required</p>
+<blockquote>
+<div><p>an integer to set the random seed for this module. It is better
+to fix a random seed in order to be able to recreate results.</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-plotters.deep">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-plotters.deep" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="clearer"></div>
+      </div>
+    </div>
+<footer class="footer d-flex justify-content-between flex-wrap">
+    <div class="copyright">
+        <div>&copy; Copyright 2019, Shayan Fazeli.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0 using <a href="https://github.com/myyasuda/sphinxbootstrap4theme">sphinxbootstrap4theme</a> 0.6.0.</div>
+    </div>
+    <div>
+        <a href="#" class="btn btn-primary btn-sm" role="botton">Back to top</a>
+    </div>
+</footer>
+  </body>
+</html>

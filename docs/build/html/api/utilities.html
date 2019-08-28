@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>utilities module &#8212; Plauthor 0.1.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinxbootstrap4.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/sphinxbootstrap4.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="plotters package" href="plotters.html" /> 
+  </head><body>
+  <nav class="navbar navbar-expand-md  fixed-top navbar-dark bg-inverse flex-wrap">
+    <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+      <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+           <a class="navbar-brand py-1" href="../index.html">
+                  Plauthor
+          </a>
+          <ul class="navbar-nav mr-auto">
+          
+              <li class="nav-item dropdown d-none d-sm-block" id="navbar-pages">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                  <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#plotters-deep-pca-module">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#plotters-deep-tsne-module">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plotters.html">plotters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#plotters-deep-pca-module">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#plotters-deep-tsne-module">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-distribution-module">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-general-module">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-matrix-module">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">utilities module</a></li>
+</ul>
+
+                  </ul>
+              </li>
+              <li class="nav-item">
+              <a  class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item">
+              
+                  <a  class="nav-link" href="http://example.com">Link</a></li>
+          </ul>
+          <div class="dropdown-divider d-block d-sm-none mb-4"></div>
+             
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <!--<div class="row hidden-sm-up">
+          <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+              <div class="container">
+             　　 <a class="navbar-brand" href="../index.html">
+                      Plauthor
+                  </a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li>
+                  <a  class="nav-link" href="../index.html">Home</a></li>
+                  <li>
+                  
+                      <a  class="nav-link" href="http://example.com">Link</a></li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <div class="navbar-text">search<div>
+              
+<form class="form-inline" action="../search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          </div>
+      </div>-->
+    </nav>
+  </div>
+
+    <div class="related d-flex justify-content-between bg-light flex-wrap" role="navigation" aria-label="related navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Plauthor 0.1.0 documentation</a></li>
+            <li class="breadcrumb-item active">utilities module</li>
+        </ol>
+       <div>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+               <a href="plotters.html" title="Previous Chapter: plotters package" class="btn btn-primary" role="botton" accesskey="P">
+                   &laquo; plotters package
+               </a>
+           </div>
+       </div>
+    </div>
+
+  <div class="main container-fluid">
+    <div class="row"> 
+      <div class="sphinxsidebar d-none d-md-block">
+        <div class="sphinxsidebarwrapper">          
+            <h4>Table Of Contents</h4>
+            
+            
+              <div class="sidebartoctree">
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#plotters-deep-pca-module">plotters.deep.pca module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#plotters-deep-tsne-module">plotters.deep.tsne module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.deep.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plotters.html">plotters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotters.deep.html">plotters.deep package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#plotters-deep-pca-module">plotters.deep.pca module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#plotters-deep-tsne-module">plotters.deep.tsne module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotters.deep.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-distribution-module">plotters.distribution module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-general-module">plotters.general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#plotters-matrix-module">plotters.matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotters.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">utilities module</a></li>
+</ul>
+
+              </div>
+            
+          
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="plotters.html"
+                        title="previous chapter">plotters package</a></p>
+<div id="searchbox" style="display: none">
+    <form class="form search" action="../search.html" method="get">
+      <input type="text" name="q" class="form-control" placeholder="Search..." />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <ul class="this-page-menu list-unstyled text-right">
+    <li><a href="../_sources/api/utilities.rst.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+        </div>
+      </div> 
+
+      <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-utilities">
+<span id="utilities-module"></span><h1>utilities module<a class="headerlink" href="#module-utilities" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="utilities.separate_path_and_file">
+<code class="sig-prename descclassname">utilities.</code><code class="sig-name descname">separate_path_and_file</code><span class="sig-paren">(</span><em class="sig-param">filepath: str</em><span class="sig-paren">)</span> &#x2192; Tuple[str]<a class="headerlink" href="#utilities.separate_path_and_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method simply separates the path and filename.
+Parameters
+———-
+filepath: <cite>str</cite>, required</p>
+<blockquote>
+<div><p>The filepath ending in file name and file format</p>
+</div></blockquote>
+<dl class="simple">
+<dt>(directory, filename): <cite>Tuple[str]</cite></dt><dd><p>It contains the absolute path to the directory, and the filename.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="clearer"></div>
+      </div>
+    </div>
+<footer class="footer d-flex justify-content-between flex-wrap">
+    <div class="copyright">
+        <div>&copy; Copyright 2019, Shayan Fazeli.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0 using <a href="https://github.com/myyasuda/sphinxbootstrap4theme">sphinxbootstrap4theme</a> 0.6.0.</div>
+    </div>
+    <div>
+        <a href="#" class="btn btn-primary btn-sm" role="botton">Back to top</a>
+    </div>
+</footer>
+  </body>
+</html>
