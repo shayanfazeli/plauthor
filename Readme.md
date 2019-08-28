@@ -24,7 +24,7 @@ python3 setup.py install
 ``
 
 ## Documentation
-For the full API documentations, please visit [here]([https://cs.ucla.edu/~shayan/docs/plauthor]).
+For the full API documentations, please visit [here](https://cs.ucla.edu/~shayan/docs/plauthor).
 
 ## Citation
 If you are using `plauthor` in your projects and research, please cite it.
