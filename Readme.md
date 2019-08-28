@@ -17,11 +17,11 @@ Depending on your user account and privileges, you might need an additional `--u
 install the package locally.
 
 To install the package from the source, do:
-``
+```
 git clone git@github.com:shayanfazeli/plauthor.git
 cd plauthor
 python3 setup.py install
-``
+```
 
 ## Documentation
 For the full API documentations, please visit [here](https://cs.ucla.edu/~shayan/docs/plauthor).
