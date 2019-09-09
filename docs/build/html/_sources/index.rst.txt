@@ -5,9 +5,10 @@ Welcome to Plauthor's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   api/plotters.deep
-   api/plotters
-   api/utilities
+    api/modules
+    api/plauthor.plotters.deep
+    api/plauthor.plotters
+    api/plauthor
 
 
 Indices and tables

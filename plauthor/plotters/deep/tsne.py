@@ -25,6 +25,7 @@ class TSNEAgent:
     def __init__(self, configurations=None):
         """
         The constructor of :class:`TSNEAgent` is this method.
+
         Parameters
         ----------
         configurations: `Dict`, optional (default=None)
@@ -143,6 +144,7 @@ class TSNEAgent:
         The :meth:`make_a_tsne_movie` helps with making a t-SNE movie. This is essentially useful
         when we have a slow-converging process, and having a movie can help shedding light on the path
         from bad locations to possibly good ones in the space.
+
         Parameters
         ----------
         X: `numpy.ndarray`, required
@@ -151,6 +153,7 @@ class TSNEAgent:
             The one-dimensional array of labels.
         movie_path: `str`, required
             The filepath to the movie. Note that the folder should exist and the image should be in `.gif` format.
+
         Returns
         ----------
         The output of this function is a `numpy.ndarray` which has the shape equal to the number of points times
