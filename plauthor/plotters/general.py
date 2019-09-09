@@ -1,3 +1,13 @@
+__author__ = 'Shayan Fazeli'
+__email__ = 'shayan@cs.ucla.edu'
+
+"""
+Plauthor: General Plotters
+==========
+
+The methods in this module are mainly associated with general and unifying plotters.
+"""
+
 import numpy
 import matplotlib.pyplot as plt
 import matplotlib.patheffects as PathEffects
