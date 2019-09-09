@@ -1,1 +1,1 @@
-import plauthor.plotters
+__version__ = "0.1.3b"

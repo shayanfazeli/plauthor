@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="plauthor",
-    version="0.1.2b",
+    version="0.1.3b",
     description="Plauthor: Machine Learning Focused Interface for Dataframe-related Visualizations",
     url="https://github.com/shayanfazeli/plauthor",
     author="Shayan Fazeli",
@@ -10,7 +10,7 @@ setup(
     license="Apache",
     classifiers=[
           'Intended Audience :: Science/Research',
-          'Development Status :: 1',
+          #'Development Status :: 1',
           'License :: OSI Approved :: Apache Software License',
           'Programming Language :: Python :: 3.6',
           'Topic :: Scientific/Engineering :: Artificial Intelligence'
